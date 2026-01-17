@@ -1,6 +1,6 @@
 
 package com.example.webapp.controller;
-
+package com.example.webapp.controller;
 import com.example.webapp.dao.UserDao;
 import com.example.webapp.model.User;
 import jakarta.servlet.http.*;
