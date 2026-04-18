@@ -39,7 +39,7 @@ pipeline {
         stage('Deploy to slave') {
             steps {
                 sh '''
-                scp target/*.war root@172.31.17.227:/mnt/servers/apache-tomcat-10.1.54/webapps
+                scp -o StrictHostKeyChecking=no target/*.war root@172.31.17.227:/mnt/servers/apache-tomcat-10.1.54/webapps
                 '''
             }
         }
